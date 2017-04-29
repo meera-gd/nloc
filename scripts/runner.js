@@ -1,6 +1,6 @@
 'use strict'
 
-const config = require('../config')
+const config = require('./config.js')
 const exec = require('child_process').exec
 const treeKill = require('tree-kill')
 
@@ -53,4 +53,4 @@ function exit (code) {
 }
 
 console.log(`${YELLOW}Starting webpack-dev-server...\n${END}`)
-run(`webpack-dev-server --hot --colors --config webpack.renderer.config.js --port ${config.port} --content-base app/dist`, YELLOW, 'webpack')
+run(`webpack-dev-server --hot --colors --config scripts/renderer.config.js --port ${config.port} --content-base app/dist`, YELLOW, 'webpack')
