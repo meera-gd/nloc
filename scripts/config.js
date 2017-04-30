@@ -1,12 +1,12 @@
-'use strict'
 
-let config = {
-  // Use ESLint (extends `airbnb`)
-  // Further changes can be made in `.eslintrc.js`
-  eslint: true,
 
-  // webpack-dev-server port
-  port: 9080
-}
+const config = {
+	// Use ESLint (extends `airbnb`)
+	// Further changes can be made in `.eslintrc.js`
+	eslint: true,
 
-module.exports = config
+	// webpack-dev-server port
+	port: 9080,
+};
+
+module.exports = config;
