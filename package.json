@@ -4,6 +4,7 @@
 	"description": "A prototype for programming ideas",
 	"author": "Meera <meera.s.gd@gmail.com>",
 	"main": "./dist/main.js",
+	"repository": "https://github.com/meera-gd/nloc",
 
 	"scripts": {
 		"build": "npm run pack && build",
