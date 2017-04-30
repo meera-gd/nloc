@@ -1,8 +1,8 @@
-# nloc
+# NLOC
 
 > A prototype for programming ideas
 
-## Build Setup
+## Running the code
 
 ``` bash
 # install dependencies
@@ -10,18 +10,18 @@ npm install
 
 # serve with hot reload at localhost:9080
 npm run dev
-
 # build electron app for production
 npm run build
 
-# lint all JS/Vue component files in `app/src`
+# run all tests
+npm test
+# run unit tests
+npm run unit
+# run end-to-end tests
+npm run e2e
+
+# lint all JS/Vue files in `src` and `test`
 npm run lint
-
-# run webpack in production
-npm run pack
+# lint files and attempt to fix issues
+npm run lint:fix
 ```
-More information can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/en/npm_scripts.html).
-
----
-
-This project was generated from [electron-vue](https://github.com/SimulatedGREG/electron-vue) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about this project can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).

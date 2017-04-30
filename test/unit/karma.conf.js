@@ -4,8 +4,8 @@ const path = require('path')
 const merge = require('webpack-merge')
 const webpack = require('webpack')
 
-const baseConfig = require('../../webpack.renderer.config')
-const projectRoot = path.resolve(__dirname, '../../app')
+const baseConfig = require('../../scripts/renderer.config.js')
+const projectRoot = path.resolve(__dirname, '../..')
 
 // Set BABEL_ENV to use proper preset config
 process.env.BABEL_ENV = 'testing-unit'
@@ -27,7 +27,7 @@ delete webpackConfig.output.libraryTarget
 // only apply babel for test files when using isparta
 webpackConfig.module.rules.some(rule => {
   if (rule.use === 'babel-loader') {
-    rule.include.push(path.resolve(projectRoot, '../test/unit'))
+    rule.include.push(path.resolve(projectRoot, 'test/unit'))
     return true
   }
 })
