@@ -14,8 +14,8 @@
 		"lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src test",
 		"lint:fix": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src test",
 		"pack": "npm run pack:main && npm run pack:renderer",
-		"pack:main": "cross-env NODE_ENV=production webpack -p --progress --colors --config scripts/main.config.js",
-		"pack:renderer": "cross-env NODE_ENV=production webpack -p --progress --colors --config scripts/renderer.config.js",
+		"pack:main": "cross-env NODE_ENV=production webpack -p --progress --colors --config scripts/main.webpack.js",
+		"pack:renderer": "cross-env NODE_ENV=production webpack -p --progress --colors --config scripts/renderer.webpack.js",
 		"postinstall": "npm run lint:fix",
 		"test": "npm run unit && npm run e2e",
 		"unit": "karma start test/unit/karma.conf.js"

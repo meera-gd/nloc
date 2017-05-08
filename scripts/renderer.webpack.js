@@ -11,7 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const rendererConfig = {
-	devtool: '#eval-source-map',
+	devtool: '#inline-source-map',
 	devServer: { overlay: true },
 	entry: {
 		renderer: path.join(__dirname, '../src/renderer/main.js'),
