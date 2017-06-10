@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"description": "A prototype for programming ideas",
 	"author": "Meera <meera.s.gd@gmail.com>",
-	"main": "./dist/main.js",
+	"main": "./bin/main.js",
 	"repository": "https://github.com/meera-gd/nloc",
 
 	"scripts": {
@@ -85,7 +85,7 @@
 	"build": {
 		"productName": "NLOC",
 		"files": [
-			"dist/",
+			"bin/",
 			"node_modules/",
 			"package.json"
 		],

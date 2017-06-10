@@ -82,7 +82,7 @@ const rendererConfig = {
 		new ExtractTextPlugin('styles.css'),
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
-			template: 'index.ejs',
+			template: 'src/index.ejs',
 			appModules: process.env.NODE_ENV !== 'production'
 				? path.resolve(__dirname, '../node_modules')
 				: false,
@@ -92,7 +92,7 @@ const rendererConfig = {
 	output: {
 		filename: '[name].js',
 		libraryTarget: 'commonjs2',
-		path: path.join(__dirname, '../dist'),
+		path: path.join(__dirname, '../bin'),
 	},
 	resolve: {
 		alias: {

@@ -1,4 +1,5 @@
 node_modules/**
+bin/**
 dist/**
 test/unit/coverage/**
 test/unit/*.js
